@@ -1,0 +1,29 @@
+'editor':
+  'fontFamily': 'Ricty'
+  'softWrap': true
+  'softWrapAtPreferredLineLength': true
+  'fontSize': 12
+  'invisibles': {}
+'core':
+  'themes': [
+    'seti-ui'
+    'seti-syntax'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+  'disabledPackages': [
+    'comment'
+  ]
+'exception-reporting':
+  'userId': '55bcc893-c362-1f4f-146e-24b8d3bbf607'
+'release-notes':
+  'viewedVersion': '0.84.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '2e1d91da78b326c92f7627f152b8436c62978fef'
+'language-jsx':
+  'nodepath': '/Users/furukawa.yosuke/.nodebrew/current/bin/node'

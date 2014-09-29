@@ -1,0 +1,6 @@
+.DS_Store
+.node-gyp
+packages/
+storage/
+compile-cache/
+
