@@ -2,7 +2,7 @@
   'fontFamily': 'Ricty'
   'softWrap': true
   'softWrapAtPreferredLineLength': true
-  'fontSize': 12
+  'fontSize': 11
   'invisibles': {}
 'core':
   'themes': [
@@ -27,3 +27,4 @@
   'userId': '2e1d91da78b326c92f7627f152b8436c62978fef'
 'language-jsx':
   'nodepath': '/Users/furukawa.yosuke/.nodebrew/current/bin/node'
+'vim-mode': {}

@@ -12,16 +12,16 @@
   'Console log':
     'prefix': 'log'
     'body': 'console.log $1'
-'.source.js':
+'.source.js, .source.jsx':
   'Gulp Task':
-    'prefix': 'gt'
+    'prefix': 'gulptask'
     'body': """
       gulp.task('$1', function () {
         $2
       });
     """
   'Gulp Require':
-    'prefix': 'gr'
+    'prefix': 'gulpreq'
     'body': "var $1 = require('gulp-$2');"
   'Gulp Src':
     'prefix': 'gs'
@@ -46,10 +46,29 @@
         browserSync.reload();
       });
     """
-'.source.jsx':
-  'Comment':
-    'prefix': 'co'
+  'JSX Comment':
+    'prefix': 'jsxcomment'
     'body': """
-      /** @jsx React.DOM */
+      /* @jsx React.DOM */
       $1
+    """
+  'Require':
+    'prefix': 'require'
+    'body':"""
+    var $1 = require('$2');
+    $3
+    """
+  'XMLHttpRequest':
+    'prefix': 'xhr'
+    'body': """
+      var req = new XMLHttpRequest();
+      req.open('${1:GET}', '${2:/}', false);
+      req.onload = function () {
+        if (this.status === 200) {
+        }
+      }
+      req.onerror = function (e) {
+        console.log(e);
+      }
+      req.send(${3:null});
     """
